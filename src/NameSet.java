@@ -5,13 +5,15 @@ import java.util.Scanner;
  */
 public class NameSet {
     Scanner s = new Scanner(System.in);
+    private String name;
     //메소드
     public void setName(){
-        System.out.println("이름 설정 가능");
-        String name = s.nextLine();
+        System.out.print("이름 설정 가능\n이름 설정 :");
+        name = s.nextLine();
     }
-    public  void getName(){
-        System.out.println("이름 출력 가능");
+    public String getName(){
+        System.out.println("Hi, "+name);
+        return name;
     }
 
 }
